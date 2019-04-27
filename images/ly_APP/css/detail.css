@@ -1,0 +1,882 @@
+body, html {
+    height: auto;
+    background-color: #E5E5E5;
+}
+
+.banner1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.history{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.history .back {
+    position: absolute;
+    left: 10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-indent: -2px;
+    cursor: pointer;
+    background:  rgba(0, 0, 0, 0.5) url("../images/go_back.png") no-repeat center center;
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+}
+.history .page_home {
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    right: 10px;
+    top: 0;
+    background:  rgba(0, 0, 0, 0.5) url("../images/home_page.png") no-repeat center center;
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+}
+.banner1 img {
+    width: 100%;
+}
+
+.day-con-img-lable{
+    bottom:5px;
+}
+
+.journey-detail {
+    padding: 10px 10px;
+}
+
+.arrow-down {
+    margin-left: 7px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #1dbd8d;
+}
+
+.day-title {
+    display: inline-block;
+    background-color: #1dbd8d;
+    line-height: 20px;
+    padding: 3px;
+    font-size: 13px;
+}
+
+.day-title span {
+    color: #fff;
+    position: relative;
+}
+
+.day-title span:not(:first-child) {
+    padding-left: 20px;
+}
+
+.car {
+    position: absolute;
+    background-image: url("../images/drawer_list_icon_nearby@2x.png");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: 20px;
+    left: 2px;
+}
+
+.time, .day-con, .day-con-wrap {
+    border-left: 1px solid #1dbd8d;
+}
+
+.time {
+    background-image: url("../images/departureTimeLogo@2x.png");
+    background-position-x: 20px;
+    background-position-y: center;;
+    background-repeat: no-repeat no-repeat;
+    background-size: 15px;
+    padding: 10px 20px;
+    padding-left: 40px;
+    font-size: 13px;
+    color: #1dbd8d;
+}
+
+.day-con {
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.place {
+    background-image: url("../images/icon_location_big@2x.png");
+    background-position-x: 5px;
+    background-position-y: center;;
+    background-repeat: no-repeat no-repeat;
+    background-size: 20px;
+    padding: 5px 20px;
+    padding-left: 30px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #1dbd8d;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.day-con-img {
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    /*padding: 20px 0;*/
+}
+
+.day-con-img-lable {
+    padding-left: 3px;
+}
+
+.day-tips {
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #EEFAF7;
+}
+
+
+/*.banner {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*padding-top: 5px;*/
+    /*z-index: 1;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.banner .i-swipe-banner {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*padding-top: 5px;*/
+    /*visibility: visible;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.banner .i-swipe-banner .banner-slider {*/
+    /*position: relative;*/
+    /*margin-top: -5px;*/
+    /*width: 500%;*/
+/*}*/
+/*.banner .i-swipe-banner .banner-slider li {*/
+    /*float: left;*/
+    /*width: 100%;*/
+    /*position: relative;*/
+/*}*/
+/*.banner .i-swipe-banner .banner-slider li img {*/
+    /*position: relative;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*min-height: 90px;*/
+    /*min-width: 320px;*/
+    /*max-width: 640px;*/
+/*}*/
+
+/*标题部分*/
+.title-box {
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+}
+.title-box .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 12px;
+    position: relative;
+}
+.title-box .title p{
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #F67570;
+}
+.title-box .price {
+    position: relative;
+}
+.title-box .price .form-price {
+    font-size: 14px;
+    color: #f50;
+    margin-right: 10px;
+}
+.title-box .yh-price {
+    font-size: 14px;
+    color: #f50;
+}
+.title-box .price a {
+    margin-left: 10px;
+    color: #23cc77;
+    font-size: 14px;
+}
+.title-box .price .form-price .num {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*折扣优惠信息*/
+.discount-box {
+    margin-top: 10px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+.discount-box .activity {
+    line-height: 50px;
+    height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.discount-box .activity a {
+    display: block;
+    width: 100%;
+}
+.discount-box .activity a .tip {
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+}
+.discount-box .activity a .num {
+    float: right;
+    color: #999;
+    font-size: 14px;
+}
+.discount-box .activity a .num .icon {
+    display: inline-block;
+    margin-left: 1px;
+    font-size: 20px;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #F3F2F5;
+}
+
+.discount-box .activity a .item-box {
+    display: block;
+    height: 50px;
+    margin: 0 24px 0 70px;
+    overflow: hidden;
+}
+.discount-box .activity a .item {
+    display: inline-block;
+    font-size: 12px;
+    background-color: #f80;
+    color: #fff;
+    margin-right: 5px;
+    margin-top: 13px;
+    line-height: 18px;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+.discount-box .coupon {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+.discount-box .coupon .tip {
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+}
+.discount-box .coupon .num {
+    float: right;
+    color: #999;
+    font-size: 14px;
+}
+.discount-box .coupon .num .icon {
+    display: inline-block;
+    margin-left: 10px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.discount-box .coupon .item-box {
+    display: block;
+    height: 50px;
+    margin: 0 24px 0 70px;
+    overflow: hidden;
+}
+.discount-box .coupon .item {
+    display: inline-block;
+    background-color: #f80;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 5px;
+    margin-top: 13px;
+    line-height: 18px;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+/*评论信息模块*/
+.remark-box {
+    margin-top: 10px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+.remark-box .remark-profile {
+    display: -webkit-flex;
+    display: flex;
+    /*flex-wrap:wrap;*/
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+.remark-box .remark-profile a{
+    line-height: 60px;
+    height: 60px;
+    display: block;
+    font-size: 12px;
+    color: #23cc77;
+    flex-shrink:0;
+
+}
+.remark-box .tip {
+    box-sizing: border-box;
+    line-height: 60px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #222;
+    flex-shrink:0;
+}
+.remark-box .remark-profile .noremark {
+    flex-grow:1;
+    box-sizing: border-box;
+    padding-top: 10px;
+    height: 60px;
+     font-size: 14px;
+     color: #f80;
+    background-image: url(../images/icon_heart@2x.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 30px ;
+    overflow: hidden;
+ }
+.remark-box .remark-profile .noremark span{
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+}
+.remark-box .remark-profile .profiles{
+    width: 100%;
+}
+.profiles-detail {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.profiles-detail-title {
+    line-height: 30px;
+}
+
+.profiles-detail-title span:last-child {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.profiles-detail-con {
+    line-height: 15px;
+    font-size: 12px;
+    color: #787878;
+}
+/*订单数量信息模块*/
+.calendar {
+    margin-top: 10px;
+}
+.calendar-box {
+    position: relative;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background: #fff;
+    color: #222;
+}
+.calendar-box .calendar-date {
+    margin-right: 90px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.calendar-box .calendar-stuff {
+    margin-right: 90px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.calendar-box .calendar-stuff .icon {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #F3F2F5;
+}
+.calendar-box .calendar-btn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-radius: 2px;
+    background: #23cc77;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+}
+/*详情导航部分*/
+.bottom-tab{
+    margin-top: 10px;
+}
+.bottom-tab .tab-box {
+    background: #fff;
+    height: 43px;
+}
+.bottom-tab .product-recommend-box {
+    background-color: #fff;
+    width: 100%;
+}
+.bottom-tab .tab-head {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+.bottom-tab .tab-head.activ{
+    min-width: 320px;
+    max-width: 640px;
+    position: fixed;
+    z-index: 19;
+    top: 0px;
+}
+.tab-box .tab-head li {
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 3;
+    width: 25%;
+    text-align: center;
+    border-bottom: 1px #ccc solid;
+}
+.bottom-tab .tab-head .current {
+    font-weight: bold;
+    border-bottom-color: #23cc77;
+}
+/*详情内容部分*/
+.bottom-tab .tab-view {
+    background: #fff;
+    margin-top: 10px;
+}
+.package-journeyInfo {
+    background: #fff;
+    padding: 0px 15px;
+}
+.package-journeyInfo section {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    padding: 0 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.package-journeyInfo section .pm-recom {
+    position: relative;
+    height: 67px;
+}
+.package-journeyInfo section .pm-recom img {
+    width: 35px;
+    height: 37px;
+    margin: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.package-journeyInfo section .pm-recom h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px 45px;
+    color: #222;
+    font-weight: normal;
+}
+.package-journeyInfo section .pm-recom div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 130px;
+    height: 25px;
+    width: 100%;
+    margin: 25px 0;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+}
+.package-journeyInfo section .pm-recom div span {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    height: 10px;
+    line-height: 10px;
+    border: 1px solid #f80;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #f80;
+}
+.package-journeyInfo section .pm-recom-main li {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.package-journeyInfo section .pm-recom-main li:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: #f80;
+    margin-top: 8px;
+    margin-left: -10px;
+}
+.package-journeyInfo section .pm-recom-main li:first-child {
+    margin-top: 0;
+}
+.package-journeyInfo section>h4 {
+    margin: 20px 0 15px;
+    font-weight: bold;
+    color: #222;
+}
+.package-journeyInfo section>h4::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 14px;
+    width: 4px;
+    background-color: #f80;
+    margin-top: 3px;
+    margin-left: -10px;
+}
+.package-journeyInfo section p{
+     white-space: pre-line;
+}
+.package-journeyInfo section .ptit{
+    color:#ff5500;
+}
+.package-journeyInfo section a {
+    text-decoration: underline;
+}
+.package-journeyInfo section img {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.tab-view .container {
+    padding: 10px 4%;
+    background: #fff;
+}
+.tab-view .container .feature-head {
+    position: relative;
+    padding: 10px 0;
+    height: 30px;
+    line-height: 30px;
+}
+.tab-view .container .feature-head .fh-text {
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tab-view .container .feature-describe {
+    font-size: 12px;
+    color: #222;
+}
+.tab-view .container .journey-describe {
+    max-height: 300px;
+    overflow: hidden;
+}
+.tab-view img{
+    width: 100%;
+}
+.journeys-main {
+    padding-top: 10px;
+}
+
+.tab-view .container .journey-describe .journeys-dt>ul>li {
+    padding: 0 1px;
+}
+.journeys-dt-head {
+    text-align: center;
+}
+.journeys-dt-head-day {
+    background-color: #00c37e;
+    display: inline-block;
+    width: 90px;
+    height: 28px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.journeys-dt-head-line {
+    padding: 20px 0;
+    font-size: 26px;
+    line-height: 34px;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-view .container .cost-describe {
+    font-size: 15px;
+    color: #222;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px solid #23cc77;
+}
+.tab-view .container .title {
+    font-size: 14px;
+    color: #111;
+    padding: 10px 0;
+}
+.tab-view .container .title:before {
+    content: '★';
+    color: orange;
+    padding-right: 5px;
+}
+.tab-view .container .cost-detail {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+}
+.bottom-tab .notice-box .sub-box {
+    position: relative;
+    padding: 0 15px 10px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+.bottom-tab .notice-box .sub-box a {
+    display: block;
+    border-bottom: 1px solid #23cc77;
+}
+.bottom-tab .notice-box .sub-box>div{
+    background-color: #EEFAF7;
+}
+.bottom-tab .notice-box .sub-box .text {
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    font-size: 16px;
+}
+.bottom-tab .notice-box .sub-box .more {
+    top: 15px;
+    right: 15px;
+}
+.more {
+    content: '';
+    position: absolute;
+    top: 42%;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.sub-box>h4 {
+    margin: 20px 0 15px;
+    font-weight: bold;
+    color: #222;
+}
+.sub-box>h4::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 14px;
+    width: 4px;
+    background-color: #f80;
+    margin-top: 3px;
+    margin-left: -10px;
+}
+
+/*相关产品推荐*/
+.product-recommend-box {
+    background-color: #fff;
+    width: 100%;
+}
+.product-recommend-box .sub-box {
+    position: relative;
+    padding: 0 15px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+.product-recommend-box .sub-box .text {
+    color: #222;
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+}
+.product-recommend-box .product-list-box .one-line {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.product-list-box .one-line .one-item {
+    float: right;
+    width: 49%;
+    font-size: 0;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.product-list-box .one-line .one-item:first-child {
+    float: left;
+}
+.product-list-box .one-line .one-item>a {
+    display: block;
+}
+.product-list-box .one-line .one-item .price {
+    height: auto;
+    line-height: 1.2;
+    margin: 0px 0 5px 10px;
+    text-align: left;
+}
+.product-list-box .one-line .one-item .img img {
+    width: 100%;
+    max-height: 120px;
+    display: block;
+    border-radius: 2px;
+}
+.product-list-box .one-line .one-item .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    text-align: left;
+    line-height: 1.3;
+    padding: 5px 10px 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #222;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -ms-line-clamp: 3;
+    -ms-box-orient: vertical;
+}
+
+.product-list-box .one-line .one-item .price>span {
+    vertical-align: middle;
+}
+.product-list-box .one-line .one-item .price span:nth-of-type(1) {
+    color: #F50;
+    font-size: 14px;
+}
+ .product-list-box .one-line .one-item .price span:nth-of-type(2) {
+    color: #F50;
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.product-list-box .one-line .one-item .price span:nth-of-type(3) {
+    color: #999;
+    font-size: 12px;
+}
+
+.bar-box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: 0 0 10px #e5e5e5;
+    background: #fff;
+    color: #666;
+    overflow: hidden;
+    line-height: 18px;
+}
+.bar-price {
+    padding: 10px 0 0 20px;
+    font-size: 12px;
+}
+.bar-price-amount span {
+    color: #f50;
+}
+.bar-price-amount strong {
+    font-size: 18px;
+    color: #f50;
+}
+.bar-price-button {
+    color: #23cc77;
+}
+.bar-right {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bar-box .message,.bar-box .phone{
+    float: left;
+    display: inline-block;
+    width: 70px;
+    height: 100%;
+    padding-top: 5px;
+    text-align: center;
+}
+.bar-box .message{
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+.bar-box .message i,.bar-box .phone i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/send_message.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+.bar-box .phone i{
+    background: url("../images/call_bg.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+.bar-submit {
+    float: left;
+    width: 100px;
+    background: #f80;
+    color: #fff;
+    font-size: 16px;
+    line-height: 54px;
+}
+
+@media (max-width: 370px){
+    .bar-submit {
+        width: 80px;
+    }
+    .bar-box .message,.bar-box .phone{
+        width: 60px;
+    }
+    .bar-price {
+        padding-left: 10px;
+    }
+}

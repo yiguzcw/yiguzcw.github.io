@@ -1,0 +1,409 @@
+@charset "utf-8";
+html,body,div,span,p,ul,ol,li,img,em,a,i,input,button,h1,h2,h3,h4,h5,dl,dt,dd,fieldset{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    min-width: 1000px;
+}
+em,i{
+    font-style:normal;
+}
+li,ol{
+    list-style:none;
+}
+fieldset,img{
+    border:0;
+    vertical-align:middle;
+}
+button{
+    cursor:pointer;
+}
+a{
+    text-decoration:none;
+}
+/*a:hover{*/
+    /*color:#ffa800;*/
+/*}*/
+button,input{
+    font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+    background-color:#fff;
+    font:14px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color:#666;
+}
+.hide,.none{
+    display:none;
+}
+.clearfix:after{
+    visibility:hidden;
+    clear:both;
+    display:block;
+    content:".";
+    height:0;
+}.clearfix{
+     *zoom:1;
+ }
+/* 版心 */
+.w1000 {
+    width: 1000px;
+    /*position:relative;*/
+    margin: auto;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+
+
+/*header部分开始*/
+.menu_wper{
+    width: 100%;
+    background-color: #555;
+    height: 34px;
+    font: 14px/1.5 "微软雅黑";
+    color: #a1acb4;
+    line-height: 34px;
+    position: relative;
+}
+.wper_cen .fl em{
+    display: inline-block;
+    width: 16px;
+    height: 30px;
+    background: url("../images/headFoot.png") no-repeat 0 -51px;
+    margin-right: 3px;
+    /*margin-top: 6px;*/
+    vertical-align: middle;
+}
+.wper_cen .fl i{
+    display: inline-block;
+    width: 14px;
+    height: 22px;
+    background: url("../images/headFoot.png") no-repeat 0 -86px;
+    margin-left: 15px;
+    /*margin-top: 6px;*/
+    vertical-align: middle;
+}
+.wper_cen .fl a{
+    color: #a1acb4;
+    margin-left: 3px;
+}
+.wper_cen .fl a:hover{
+    text-decoration: underline;
+}
+.wper_cen .fr a{
+    color: white;
+}
+.wper_cen .fr a:first-child{
+    color: #ffa800;
+}
+.wper_cen .fr a:hover{
+    color: #ffa800;
+}
+.wper_cen .fr span{
+    margin: 0 8px;
+}
+.wper_cen .down{
+    width: 150px;
+    height: 158px;
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 340px;
+    z-index: 999;
+}
+.logo_cen{
+     position: relative;
+ }
+.logo-bd{
+    display: block;
+    width: 344px;
+    height: 77px;
+    background: url("../images/hxcf_logo.jpg") no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.searh{
+    position: absolute;
+    left: 420px;
+    top: 22px;
+}
+.share{
+    padding-top:23px;
+}
+.share a{
+    display: block;
+    width: 31px;
+    height: 31px;
+    margin-right: 20px;
+    border-radius: 50%;
+    float: left;
+}
+.share a:first-child{
+    background:url("../images/top_01.jpg") no-repeat;
+}
+.share a:nth-child(2){
+    background:url("../images/top_02.jpg") no-repeat ;
+}
+.share a:last-child{
+    background:url("../images/top_03.jpg") no-repeat;
+}
+.searh input{
+    width: 250px;
+    height: 33px;
+    border: 1px solid #fcad00;
+    line-height: 33px;
+    float: left;
+    outline:none;
+    padding-left: 5px;
+    border-radius: 15px 0 0 15px;
+    color: #ccc;
+}
+.searh button{
+    width: 50px;
+    height: 33px;
+    color: white;
+    background-color:#fcad00;
+    border: none;
+    float: left;
+    font-size:16px;
+    font-weight: bold;
+    padding-right: 3px;
+    border-radius: 0 15px 15px 0;
+}
+.nav_wper{
+    width: 100%;
+    background-color: #fcad00;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.nav ul{
+    height: 46px;
+    line-height: 46px;
+    font:16px/2.8 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+.nav ul li{
+    width: 132px;
+    height: 100%;
+    float: left;
+    margin: 0 5px;
+}
+.nav li a{
+    display: block;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+.nav .current{
+    background-color: #ff7600;
+    border-bottom: 2px solid red;
+}
+#nav>li{
+    position: relative;
+}
+#nav li>ul{
+    position: absolute;
+    width: 132px;
+    top: 46px;
+    left: -5px;
+    display: none;
+}
+#nav li>ul>li{
+    float: left;
+    width: 132px;
+    height: 46px;
+    background-color: #ff7600;
+}
+#nav li>ul>li a:hover{
+    background-color: #fcad00;
+}
+/*footer部分开始*/
+.ft-wrap {
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    background-color: #555;
+    color: #fff;
+}
+.ft-cont{
+    position: relative;
+}
+.ft-nav>li {
+    float: left;
+    font-size: 18px;
+}
+.ft-nav>li+li {
+    padding-left: 50px;
+}
+.ft-nav>li>ul {
+    padding-top: 15px;
+}
+.ft-nav>li>ul>li {
+    padding-top: 5px;
+}
+.ft-nav li a {
+    color: #dbdbdb;
+    font-size: 13px;
+}
+
+.ft-nav li a:hover {
+    color: #29A7E1;
+}
+
+.ft-kf{
+    padding-left: 50px;
+}
+.ft-kf .kf18{
+    color: #fff;
+    font-size: 18px;
+}
+.ft-kf h2{
+    color: #dbdbdb;
+    font-size: 26px;
+    margin: 10px 0 3px;
+}
+.ft-kf p{
+    color: #dbdbdb;
+    font-size: 13px;
+}
+.kf-nav li {
+    float: left;
+    padding-right: 15px;
+}
+.kf-nav a{
+    margin-top: 8px;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.kf-nav li:first-child a{
+     background: url("../images/kf-logo.png") no-repeat 0 0;
+ }
+.kf-nav li:nth-child(2) a{
+    background: url("../images/kf-logo.png") no-repeat -26px  0;
+}
+.kf-nav li:nth-child(3) a{
+    background: url("../images/kf-logo.png") no-repeat -92px  0;
+}
+.kf-nav li:first-child a:hover{
+    background: url("../images/kf-logo.png") no-repeat 0 -30px;
+}
+.kf-nav li:nth-child(2) a:hover{
+    background: url("../images/kf-logo.png") no-repeat -26px -30px;
+}
+.kf-nav li:nth-child(3) a:hover{
+    background: url("../images/kf-logo.png") no-repeat -92px -30px;
+}
+.ft-kf .wechat {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    background: url("../images/my_wechat.jpg") no-repeat center center /125px 125px;
+    top: 0;
+    right: 8px;
+    box-shadow: #2D3032 2px 2px 1px 2px;
+}
+.link-nav li {
+    float: left;
+    padding-left: 12px;
+}
+
+.link-nav {
+    padding: 30px 83px 0;
+}
+
+.friendlink {
+    position: relative;
+    padding: 15px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    color: #dbdbdb;
+    font-size: 15px;
+    margin: 20px 10px 0;
+    text-align: center;
+}
+.friendlink span{
+    padding-right: 10px;
+}
+.friendlink a {
+    padding: 0 10px;
+    color: #dbdbdb;
+}
+.friendlink a:hover {
+    color: #ffa800;
+}
+.statament{
+ margin: 30px auto;
+}
+.statament li{
+    float: left;
+    padding-right: 15px;
+}
+.statament li:last-child{
+    padding-right:0
+}
+.statament li a{
+    display: block;
+    width: 130px;
+    height: 50px;
+    background-image: url("../images/u-spirits.png");
+}
+.statament li:first-child a{
+    background-position: -5px -134px;
+}
+.statament li:nth-child(2) a{
+     background-position: -137px -134px;
+ }
+.statament li:nth-child(3) a{
+      background-position: -268px -134px;
+  }
+.statament li:nth-child(4) a{
+       background-position: -402px -134px;
+   }
+.statament li:nth-child(5) a{
+        background-position: -536px -134px;
+    }
+.statament li:nth-child(6) a{
+    background-position: -670px -134px;
+}
+.statament li:nth-child(7) a{
+    background-position: -806px -134px;
+}
+.others{
+    text-align: center;
+    color: #9aa5b8;
+}
+.others a{
+    font-size: 14px;
+    color: #9aa5b8;
+    margin:10px;
+}
+.others a:hover{
+    color: #29A7E1;
+}
+.copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.copyright span{
+    padding-right: 20px;
+    display: inline-block;
+    font-family: monospace;
+    color:#9aa5b8;
+    font-size: 14px;
+}
+.copyright a{
+    display: inline-block;
+    font-family: monospace;
+    color:#9aa5b8;
+    font-size: 14px;
+}
+.copyright a:first-child{
+    padding-right: 20px;
+}
+/*footer部分结束*/

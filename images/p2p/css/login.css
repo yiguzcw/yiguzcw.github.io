@@ -1,0 +1,132 @@
+.login_wper {
+    background: url("../images/lg_bg01.png") no-repeat center center #f3f3f3;
+    height: 645px;
+    padding-top: 40px;
+}
+.login_con {
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 3px 0 rgba(255,255,255,.8), 6px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 3px 3px 0 rgba(255,255,255,.8), 6px 6px 0 rgba(0,0,0,.1);
+}
+.lg_advert {
+    display: block;
+    width: 617px;
+    height: 332px;
+}
+.lg_box {
+    box-sizing: content-box;
+    width: 300px;
+    padding: 35px 40px;
+}
+.lg_tit {
+    color: #555555;
+    height:22px;
+    line-height:22px;
+}
+.lg_tit span {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.lg_tit em {
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+.lg_tit em a {
+    color: #eb4256;
+}
+.lg_input {
+    box-sizing: content-box;
+    width: 263px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    line-height: 40px;
+    padding-left: 35px;
+    height: 40px;
+    font-size: 14px;
+}
+.lg_input01 {
+    background: url(../images/lg_name.png) no-repeat scroll 5px 0 #ffffff;
+}
+.lg_input02 {
+    background: url(../images/lg_pas.png) no-repeat scroll 5px 0 #ffffff;
+}
+.lg_input03 {
+    background: url(../images/lg_phone.png) no-repeat scroll 5px 0 #ffffff;
+}
+.lg_input04 {
+    background: url(../images/lg_phone2.png) no-repeat scroll 5px 0 #ffffff;
+}
+.lg_input05 {
+    background: url(../images/lg_phone3.png) no-repeat scroll 5px 0 #ffffff;
+}
+.lg_check {
+    color: #555;
+    font-size: 14px;
+    padding: 15px 0;
+}
+.lg_check a {
+    color: #555;
+}
+.lg_btn {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #14b2e2;
+}
+.lg_btn:hover {
+    background-color: #3bc4ee;
+}
+.mt20 {
+    margin-top: 20px;
+}
+
+.reg_wper {
+    height: 910px;
+    background: url(../images/reg_bg01.png) no-repeat scroll center center;
+    padding-top: 40px;
+}
+.reg_box {
+
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 0 rgba(255,255,255,.8), 6px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 3px 3px 0 rgba(255,255,255,.8), 6px 6px 0 rgba(0,0,0,.1);
+}
+.reg_advert {
+    width: 604px;
+}
+.reg_con {
+    box-sizing: content-box;
+    width: 300px;
+    padding: 35px 45px;
+}
+.yanzheng .lg_input {
+    width: 125px;
+}
+.yanzheng span {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #f8b551;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.pt10 a{
+    color: #555555;
+}

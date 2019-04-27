@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华兴财富在线</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/all.js"></script>
+    <script>
+        function banner(){
+            var bn_id = 0;
+            var bn_id2= 1;
+            var speed33=5000;
+            var qhjg = 1;
+            var MyMar33;
+            $("#banner .d1").hide();
+            $("#banner .d1").eq(0).fadeIn("slow");
+            if($("#banner .d1").length>1)
+            {
+                $("#banner_id li").eq(0).addClass("nuw");
+                function Marquee33(){
+                    bn_id2 = bn_id+1;
+                    if(bn_id2>$("#banner .d1").length-1)
+                    {
+                        bn_id2 = 0;
+                    }
+                    $("#banner .d1").eq(bn_id).css("z-index","2");
+                    $("#banner .d1").eq(bn_id2).css("z-index","1");
+                    $("#banner .d1").eq(bn_id2).show();
+                    $("#banner .d1").eq(bn_id).fadeOut("slow");
+                    $("#banner_id li").removeClass("nuw");
+                    $("#banner_id li").eq(bn_id2).addClass("nuw");
+                    bn_id=bn_id2;
+                };
+
+                MyMar33=setInterval(Marquee33,speed33);
+
+                $("#banner_id li").click(function(){
+                    var bn_id3 = $("#banner_id li").index(this);
+                    if(bn_id3!=bn_id&&qhjg==1)
+                    {
+                        qhjg = 0;
+                        $("#banner .d1").eq(bn_id).css("z-index","2");
+                        $("#banner .d1").eq(bn_id3).css("z-index","1");
+                        $("#banner .d1").eq(bn_id3).show();
+                        $("#banner .d1").eq(bn_id).fadeOut("slow",function(){qhjg = 1;});
+                        $("#banner_id li").removeClass("nuw");
+                        $("#banner_id li").eq(bn_id3).addClass("nuw");
+                        bn_id=bn_id3;
+                    }
+                })
+                $("#banner_id").hover(
+                    function(){
+                        clearInterval(MyMar33);
+                    }
+                    ,
+                    function(){
+                        MyMar33=setInterval(Marquee33,speed33);
+                    }
+                )
+            }
+            else
+            {
+                $("#banner_id").hide();
+            }
+        }
+    </script>
+</head>
+<body>
+<!--header部分开始-->
+<div class="menu_wper">
+    <div class="wper_cen w1000 clearfix">
+        <div class="fl">
+            <em></em>
+            <span>客服热线: 400-888-8888</span>
+                <i></i>
+                <a href="javascript:void(0)" id="phone">手机客户端</a>
+        </div>
+        <div class="fr">
+            <a href="#">立即登录</a>
+            <span>|</span>
+            <a href="#">免费注册</a>
+            <span>|</span>
+            <a href="#">在线充值</a>
+            <span>|</span>
+            <a href="#">常见问题</a>
+        </div>
+        <div class="down" id="down"><img src="images/phone_dawn.png" alt="下载客户端"></div>
+    </div>
+</div>
+<div class="logo_wper">
+    <div class="logo_cen w1000 clearfix">
+        <div class="logo fl">
+            <h1>
+                <a href="#" class="logo-bd">华兴财富在线</a>
+            </h1>
+        </div>
+        <div class="searh">
+            <input type="text" value="请输入文章的关键字">
+            <button>搜索</button>
+        </div>
+        <div class="share fr" id="share">
+            <a href="#"></a><a href="#"></a><a href="#"></a>
+        </div>
+    </div>
+</div>
+<div class="nav_wper">
+    <div class="nav w1000 clearfix">
+        <ul id="nav">
+            <li  class="current"><a href="#">首页</a></li>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">网贷</a></li>
+            <li><a href="#">实时财务</a></li>
+            <li><a href="#">新手指引</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+        </ul>
+    </div>
+</div>
+<!--header部分结束-->
+<div id="gy_guide_safety_xzk">
+    <div class="px1000">
+        <div class="gy_guide_index_xzk_header" style="margin-bottom:20px;">
+            <img src="images/gy_guide_index_xzk_picx.png"/>
+            <span><a href="">首页</a></span>
+            >
+            <span><a href="">活动专区</a></span>
+        </div>
+    </div>
+    <div class="px1000 gy_guide_index_xzkgrr_gugao">
+        <div class="banner_gg">
+            <p style="font-size:35.95px;">新手专享项目</p>
+            <p class="banner_gg_hdfont">体验金与新手体验标为PPP在线在公测期与试运营期间采取定向邀请制进行的测试活动，仅为体验投资之用，不对应真实借款项目，旨在完善平台功能，为平台的正式上线打下良好基础。</p>
+            <p class="banner_gg_hdbm"><a href="">活动报名</a></p>
+        </div>
+    </div>
+
+    <div class="banner" id="banner" >
+        <a href="" class="d1" style="background:url(images/gy_adver_viwepager_activity.png) center no-repeat;"></a>
+        <a href="" class="d1" style="background:url(images/gy_adver_viwepager_activity1.png) center no-repeat;"></a>
+        <a href="" class="d1" style="background:url(images/gy_adver_viwepager_activity.png) center no-repeat;"></a>
+        <a href="" class="d1" style="background:url(images/gy_adver_viwepager_activity1.png) center no-repeat;"></a>
+        <div class="d2" id="banner_id">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">banner()</script>
+</div>
+
+<div id="gy_guide_activety_xzk">
+    <div class="px1000">
+        <div class="gy_guide_activety_xzk_up">
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+                <div class="gy_guide_activety_avyy_bg" style="display:none">
+
+                    <div class="gy_guide_activety_avyy">
+                        <p style="font-size:22px;color:#29A7E1;">新手专享项目</p>
+                        <p style="font-size:12px;">体验金与新手体验标为PPP在线在公
+                            测期与试运营期间采取定向邀请制进
+                            行的测试活动</p>
+                        <p>
+                            <span style="color:#29A7E1">●</span>
+                            <span>项目年化收益率</span>
+                            <span style="font-size:25px;color:#FC8F4A">18.20</span>
+                            <span style="font-size:18px;color:#FC8F4A;">%</span>
+                        </p>
+                        <p>
+                            <span style="color:#29A7E1">●</span>
+                            <span>项目期限</span>
+                            <span style="font-size:25px;color:#FC8F4A;">7</span>
+                            <span style="font-size:18px;color:#FC8F4A;">天</span>
+                        </p>
+                        <p style="font-size:12px;">还款方式：到期还本付息</p>
+                        <div class="gy_guide_activety_avyyr_bg1 fl">
+                            <div class="gy_treasur_bg2" style="width:50%;">
+
+                            </div>
+                        </div>
+                        <p><span style="color:#FFFFFF;">214,000.00 /</span>  70 万</p>
+                        <p class="gy_guide_activety_avyyr_btn"><a href="">活动报名</a></p>
+                    </div>
+                </div>
+                <div class="gy_guide_activety_avyy_tmdbg" style="display:none"></div>
+            </div>
+        </div>
+
+        <div class="gy_guide_activety_xzk_down">
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+                <div class="gy_guide_activety_avyy_bg" style="display:none">
+                    <div class="gy_guide_activety_avyy">
+                        <p style="font-size:22px;color:#29A7E1;">新手专享项目</p>
+                        <p style="font-size:12px;">体验金与新手体验标为PPP在线在公
+                            测期与试运营期间采取定向邀请制进
+                            行的测试活动</p>
+                        <p>
+                            <span style="color:#29A7E1">●</span>
+                            <span>项目年化收益率</span>
+                            <span style="font-size:25px;color:#FC8F4A">18.20</span>
+                            <span style="font-size:18px;color:#FC8F4A;">%</span>
+                        </p>
+                        <p>
+                            <span style="color:#29A7E1">●</span>
+                            <span>项目期限</span>
+                            <span style="font-size:25px;color:#FC8F4A;">7</span>
+                            <span style="font-size:18px;color:#FC8F4A;">天</span>
+                        </p>
+                        <p style="font-size:12px;">还款方式：到期还本付息</p>
+                        <div class="gy_guide_activety_avyyr_bg1 fl">
+                            <div class="gy_treasur_bg2" style="width:50%;">
+
+                            </div>
+                        </div>
+                        <p><span style="color:#FFFFFF;">214,000.00 /</span>  70 万</p>
+                        <p class="gy_guide_activety_avyyr_btn"><a href="" style="background:#A3A4A4">活动已结束</a></p>
+                    </div>
+                </div>
+                <div class="gy_guide_activety_avyy_tmdbg" style="display:none"></div>
+            </div>
+            <div class="fl gy_guide_activety_img">
+                <img src="images/gy_guide_activety_xzk_bg.png">
+                <p class="gy_guide_activety_fonts">新手专享&nbsp;&nbsp;省心体验</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--footer部分开始-->
+<div class="ft-wrap">
+    <div class="ft-cont w1000">
+        <div class="cf-hd clearfix">
+            <ul class="ft-nav">
+                <li>
+                    基本介绍
+                    <ul>
+                        <li><a href="####" target="_blank" title="会员注册" rel="nofollow">会员注册</a></li>
+                        <li><a href="####" target="_blank" title="常用名词解释" rel="nofollow">常用名词解释</a></li>
+                    </ul>
+                </li>
+                <li>
+                    投资理财
+                    <ul>
+                        <li><a href="####" target="_blank" title="投资准备" rel="nofollow">投资准备</a></li>
+                        <li><a href="####" target="_blank" title="申请成为投资人" rel="nofollow">申请成为投资人</a></li>
+                        <li><a href="####" target="_blank" title="申请理财包技巧" rel="nofollow">申请理财包技巧</a></li>
+                    </ul>
+                </li>
+                <li>
+                    融资快贷
+                    <ul>
+                        <li><a href="####" target="_blank" title="利率期限方式" rel="nofollow">利率期限方式</a></li>
+                        <li><a href="####" target="_blank" title="如何申请融资" rel="nofollow">如何申请融资</a></li>
+                        <li><a href="####" target="_blank" title="如何偿还资金" rel="nofollow">如何偿还资金</a></li>
+                    </ul>
+                </li>
+                <li>
+                    充值提现
+                    <ul>
+                        <li><a href="####" target="_blank" title="充值相关的问题" rel="nofollow">充值相关的问题</a></li>
+                        <li><a href="####" target="_blank" title="提现相关的问题" rel="nofollow">提现相关的问题</a></li>
+                    </ul>
+                </li>
+                <li>
+                    安全保障
+                    <ul>
+                        <li><a href="####" target="_blank" title="找回密码" rel="nofollow">找回密码</a></li>
+                        <li><a href="####" target="_blank" title="密码安全常识" rel="nofollow">密码安全常识</a></li>
+                        <li><a href="####" target="_blank" title="电子合同有效吗" rel="nofollow">电子合同有效吗</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ft-kf fr">
+                <div class="kf">
+                    <p class="kf18">在线客服</p>
+                    <h2>888-8888-888</h2>
+                    <p>（服务时间 9:00～22:00）</p>
+                    <ul class="kf-nav">
+                        <li><a href="####" target="" title="" rel="在线客服"></a></li>
+                        <li><a href="####" target="_blank" title="微博服务" rel="nofollow"></a></li>
+                        <li><a href="####" target="_blank" title="微信客服" rel="nofollow"></a></li>
+                    </ul>
+                </div>
+                <div class="wechat">
+                </div>
+            </div>
+        </div>
+        <div class="friendlink clearfix">
+                <span>友情链接:</span>
+                <a href="http://www.moneyking.cn/" target="_blank" title="太平洋资产管理(集团)">太平洋资产管理(集团)</a>
+                <a href="http://money.jrj.com.cn/" target="_blank" title="金融界">金融界</a>
+                <a href="http://www.rong360.com/licai/" target="_blank" title="融360">融360</a>
+                <a href="http://www.caiguu.com/licai/" target="_blank" title="财股网理财">财股网理财</a>
+                <a href="http://www.nlnw.net" target="_blank" title="房贷利率">房贷利率</a>
+                <a href="http://www.wangdaizhijia.com/" target="_blank" title="网贷之家">网贷之家</a>
+                <a href="http://house.focus.cn/fangdaijisuanqi/shangyedaikuan/" target="_blank" title="商业贷款计算器">商业贷款计算器</a>
+                <a href="http://www.jpm.cn/" target="_blank" title="金评媒">金评媒</a>
+                <a href="http://www.smartqian.com/" target="_blank" title="金融导航">金融导航</a>
+        </div>
+        <ul class="statament clearfix">
+            <li><a href="http://www.miibeian.gov.cn/" target="_blank" ></a></li>
+            <li><a href="http://www.gdnet110.gov.cn/" target="_blank"></a></li>
+            <li><a href="http://webscan.360.cn/index/checkwebsite" target="_blank"></a></li>
+            <li><a href="https://search.szfw.org/cert/l/CX20130826002735003003" target="_blank"></a></li>
+            <li><a href="https://ss.knet.cn/verifyseal.dll" target="_blank" ></a></li>
+            <li><a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1591537685" target="_blank"></a></li>
+            <li><a href="http://www.anquan.org/authenticate/cert" target="_blank"></a></li>
+        </ul>
+        <div class="others">
+            <a href="/info/about" title="关于我们" rel="nofollow">关于我们</a>|
+            <a href="/job/list" title="人才招聘" rel="nofollow">人才招聘</a>|
+            <a href="/info/law" title="法律申明" rel="nofollow">法律申明</a>|
+            <a href="/info/feedback" title="意见反馈" rel="nofollow">意见反馈</a>|
+            <a href="/info/contact" title="联系我们" rel="nofollow">联系我们</a>|
+            <a href="/info/help" title="新手必读" rel="nofollow">新手必读</a>
+        </div>
+        <div class="copyright">
+            <span>版权所有 (C) hxcfmoney.com</span> <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">粤ICP备12030634号</a><a href="/special/icp/icp.html" target="_blank">增值电信业务经营许可证粤B2-20150286</a></div>
+    </div>
+</div>
+<!--footer部分结束-->
+</body>
+</html>

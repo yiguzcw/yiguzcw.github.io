@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+    	<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content=" ">
+    	<meta name="keywords" content="">
+    	<title>脉脉游-首页-新一代的结伴旅游平台</title>
+		
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WzPFACKf7oqEk8k3F6qnzfZiiIaV8vtS"></script>
+		<script src="js/index.js"></script>
+
+    </head>
+    <body>
+	<header class="search">
+		<div class="search_box">
+			<a href="#" class="logo_icon">脉游</a>
+			<form action="#">
+				<span class="search_icon"></span>
+				<input id="search" type="search" placeholder="马尔代夫自由行">
+			</form>
+			<a href="#" class="locat_icon" id="maiMap"></a>
+		</div>
+	</header>
+	<div id="mapdiv">
+		<div id="mapcontainer">
+
+		</div>
+		<span id="mapclose">X</span>
+	</div>
+    <div id="container">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="detail.html">
+					<img src="images/banner_bg1.jpg" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="detail.html">
+					<img src="images/banner_bg2.jpg" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="detail.html">
+					<img src="images/banner_bg3.jpg" alt="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="detail.html">
+					<img src="images/banner_bg4.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<nav>
+			<div class="ranks">
+				<div class="list">
+					<ul>
+						<li><a href="destination.html"><img src="images/nav_banner_bg1.gif" alt=""></a></li>
+						<li><a href="destination.html"><img src="images/nav_banner_bg6.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="list">
+					<ul>
+						<li><a href="destination.html"><img src="images/nav_banner_bg2.png" alt=""></a></li>
+						<li><a href="destination.html"><img src="images/nav_banner_bg4.png" alt=""></a></li>
+						<li><a href="destination.html"><img src="images/nav_banner_bg7.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="list">
+					<ul>
+						<li><a href="destination.html"><img src="images/nav_banner_bg3.png" alt=""></a></li>
+						<li><a href="destination.html"><img src="images/nav_banner_bg5.png" alt=""></a></li>
+						<li><a href="destination.html"><img src="images/nav_banner_bg8.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<ul>
+					<li><div><a href="destination.html">特价酒店</a></div></li>
+					<li><div><a href="destination.html">特价机票</a></div></li>
+					<li><div><a href="destination.html">车票·租车</a></div></li>
+					<li><div><a href="destination.html">团 购</a></div></li>
+					<li><div><a href="destination.html">签 证</a></div></li>
+				</ul>
+			</div>
+			<div class="feature">
+				<ul>
+					<li><a href="stategy.html">
+						<span></span>
+						<p>找攻略</p>
+					</a></li>
+					<li><a href="stategy.html">
+						<span></span>
+						<p>看游记</p>
+					</a></li>
+					<li><a href="community.html">
+						<span></span>
+						<p>问达人</p>
+					</a></li>
+					<li><a href="community.html">
+						<span></span>
+						<p>约伴</p>
+					</a></li>
+					<li><a href="destination.html">
+						<span></span>
+						<p>特卖会</p>
+					</a></li>
+					<li><a href="destination.html">
+						<span></span>
+						<p>美食林</p>
+					</a></li>
+					<li><a href="destination.html">
+						<span></span>
+						<p>旅游用品</p>
+					</a></li>
+					<li><a href="javascript:;">
+						<span></span>
+						<p>短视频</p>
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="temaihui">
+			<div class="hd clearFix">
+				<h3>特卖汇</h3>
+				<div class="hongbao"><a href="javascript:;">领红包再下单</a></div>
+			</div>
+			<div class="bd clearFix">
+				<a class="baokuan_box sales_item" href="detail.html">
+					<div class="pic">
+					<span>
+						爆款
+					</span>
+						<img src="images/1225.jpg" alt="">
+					</div>
+					<h4>马来西亚槟城+兰卡威5日4晚半自助游(4钻)·【兰卡威自由活动】2799起限量</h4>
+					<span class="price"><em>¥</em>2799</span>
+					<span class="cut">4.7折</span>
+				</a>
+				<a class="sales_item" href="destination.html">
+					<dl>
+						<dt>千款特价</dt>
+						<dd>走过路过不错过</dd>
+					</dl>
+					<img src="images/pic-tmh-02.png" alt="">
+				</a>
+				<a class="sales_item" href="destination.html">
+					<dl>
+						<dt>海外精选</dt>
+						<dd><span>百元</span>出境游</dd>
+					</dl>
+				</a>
+				<a class="sales_item" href="destination.html">
+					<dl>
+						<dt>周边玩乐</dt>
+						<dd><span>十元</span>度周末</dd>
+					</dl>
+				</a>
+			</div>
+			<div class="teMai_foot clearFix">
+				<div class="channel_right">
+					<a class="channel_flight" href="destination.html">
+						<div>
+							<img class="channel_flight_img" src="images/channel_flight_img.png">
+							<p class="channel_flight_disco">
+								<i>2.7折</i>
+							</p>
+						</div>
+						<div href="####">
+							<p class="channel_flighTit">昆明-重庆</p>
+							<p class="channel_flight_price">￥327<span style="font-size: 12px;">起</span></p>
+						</div>
+					</a>
+					<a class="channel_hotel" href="destination.html">
+						<div class="channel_hotel_image">
+						</div>
+						<div>
+							<img class="channel_hotelImg" src="images/channel_hotel_sale.png">
+						</div>
+						<div>
+							<p class="channel_hotelTit"> 万家酒店抄底大促销</p>
+							<div class="channel_hotelTag">
+								<p class="ellipsis channel_hotel_price"> 超低价</p>
+								<p class="ellipsis channel_label">
+									<i class="r1b">优选商家</i>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<a class="channel_left" href="destination.html">
+					<p class="channel_subtitle">全国-普吉岛6天5晚自由行机票+酒店</p>
+					<div class="channel_info_h">
+						<span class="channel_price">881起 Go&gt;</span>
+					</div>
+					<img class="channel_image" src="images/channel_image2.jpg">
+				</a>
+
+			</div>
+		</div>
+		<div class="huodong">
+			<div class="hd">
+				<h3>热门活动</h3>
+				<div class="fr"><a href="javascript:;">获取更多福利 > </a></div>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="destination.html"><img src="images/huodong_bg1.jpg" alt=""></a></li>
+					<li><a href="destination.html"><img src="images/huodong_bg2.jpg" alt=""></a></li>
+					<li><a href="destination.html"><img src="images/huodong_bg3.jpg" alt=""></a></li>
+					<li><a href="destination.html"><img src="images/huodong_bg4.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="modules">
+			<ul>
+				<li>
+					<div class="title"><span class="fl seckill">1元秒杀</span><a class="fr">更多 &gt;</a></div>
+					<ul>
+						<li>
+							<a class="img" href="detail.html">
+								<img src="images/seckill_bg.jpg">
+								<div class="lable">
+									<div class="destination fl">7月25日 | 深圳出发</div>
+									<div class="fr">
+										<span class="newPrice">￥1.00</span>
+										<del class="oldPrice">￥1999</del>
+									</div>
+								</div>
+								<a class="kill_btn">立即抢购</a>
+							</a>
+
+							<p class="detail">
+								香港澳门购物嗨玩五天游 <br/><span>限第一次入港旅客，购物游玩的不二选择</span>
+							</p>
+						</li>
+					</ul>
+
+				</li>
+				<li>
+					<div class="title"><span class="fl tail">尾单捡漏</span><a class="fr">更多 &gt;</a></div>
+					<ul>
+						<li>
+							<a class="img" href="detail.html">
+								<img src="images/tail_bg1.jpg">
+								<div class="lable">
+									<div class="destination fl">7月21日 | 北京出发</div>
+									<div class="fr">
+										<span class="newPrice">￥3099</span>
+										<del class="oldPrice">￥6999</del>
+									</div>
+								</div>
+								<a class="kill_btn">立即抢购</a>
+							</a>
+
+							<p class="detail">
+								北京-西欧7晚9天极致自由行
+								<br/>
+								<span>北京往返布鲁塞尔+1晚酒店，极致西欧自由行</span>
+							</p>
+						</li>
+						<li>
+							<hr/>
+							<a class="img" href="detail.html">
+								<img src="images/tail_bg2.jpg">
+								<div class="lable">
+									<div class="destination fl">8月22日 | 广州出发</div>
+									<div class="fr">
+										<span class="newPrice">￥1699</span>
+										<del class="oldPrice">￥3699</del>
+									</div>
+								</div>
+								<a class="kill_btn">立即抢购</a>
+							</a>
+							<p class="detail">
+								广州-韩国首尔新罗免税6日游<br>
+								<span>超值游轮，汗蒸幕，乐天通票，奥特莱斯</span>
+							</p>
+						</li>
+					</ul>
+
+				</li>
+				<li>
+					<div class="title"><span class="fl">爆款专区</span><a class="fr">更多 &gt;</a></div>
+					<ul>
+						<li>
+							<a class="img" href="detail.html">
+								<img src="images/hot_sale_bg1.jpg">
+								<div class="lable">
+									<div class="destination fl">8月27日 | 澳门出发</div>
+									<div class="fr">
+										<span class="newPrice">￥2099</span>
+									</div>
+								</div>
+								<a class="kill_btn">立即抢购</a>
+							</a>
+
+							<p class="detail">
+								澳门-济州岛4日单机票<br>
+								<span>单机票，澳门往返，特价机票含税，限量供应</span>
+							</p>
+						</li>
+						<li>
+							<hr/>
+							<a class="img" href="detail.html">
+								<img src="images/hot_sale_bg2.jpg">
+								<div class="lable">
+									<div class="destination fl">7月24日 | 北京出发</div>
+									<div class="fr">
+										<span class="newPrice">￥4199</span>
+									</div>
+								</div>
+								<a class="kill_btn">立即抢购</a>
+							</a>
+							<p class="detail">
+								北京-苏梅随心5晚6日自助旅游<br>
+								<span>赠送境外旅游意外险，2人即可成团</span>
+							</p>
+						</li>
+					</ul>
+
+				</li>
+			</ul>
+		</div>
+    </div>
+	<footer>
+		<a class="foot act" href="####">
+			<span></span>
+			<p>首页</p>
+		</a>
+		<a class="foot" href="community.html">
+			<span></span>
+			<p>社区</p>
+		</a>
+		<a class="foot" href="destination.html">
+			<span></span>
+			<p>目的地</p>
+		</a>
+		<a class="foot" href="stategy.html">
+			<span></span>
+			<p>攻略</p>
+		</a>
+		<a class="foot" href="home.html">
+			<span></span>
+			<p>我的</p>
+		</a>
+	</footer>
+
+	</body>
+</html>

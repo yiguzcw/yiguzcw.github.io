@@ -1,0 +1,430 @@
+/*顶部banner块*/
+.top-banner{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    border-bottom: 1px solid #e5e5e5;
+}
+.top-banner img {
+    width: 100%;
+    vertical-align: top;
+}
+.top-banner .vam {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.top-banner .vam ul {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.top-banner .vam li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.top-banner .vam li span {
+    display: inline-block;
+    margin: -5px 20px 0;
+}
+.top-banner .vam li em {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-style: normal;
+    font-size: 30px;
+    font-family: Georgia;
+    vertical-align: top;
+}
+/*发起结伴部分*/
+.custom{
+    position: relative;
+    color: #fff;
+    height: 90px;
+    padding: 15px 12px 10px 16px;
+    margin: 5px 0;
+    background: url(../images/personal_bg.png) 0 center no-repeat;
+    box-shadow: 0 2px 4px 0 rgba(219, 219, 219, 0.5);
+    background-size: cover;
+}
+.custom::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    height: 55px;
+    background: url(../images/personal_icon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.custom h3{
+    height: 32px;
+    line-height: 32px;
+    font-size: 23px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.custom h3 span{
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 0 7px;
+}
+.custom .custom-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px 0 16px 5px;
+}
+.custom .custom-tags li{
+    position: relative;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 0 0 13px;
+}
+.custom .custom-tags li::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 3px;
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/un_ico_subnav.png);
+    background-repeat: no-repeat;
+    background-size: 16px 145px;
+    background-position: 0 -94px;
+}
+.custom p{
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 0 0 5px;
+    color: #fff;
+}
+.custom p::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 0 0 6px;
+    vertical-align: -2px;
+    background: #fff url(../images/arrow_grey_right_normal.png) no-repeat center;
+    background-size: cover;
+}
+.custom-button{
+    position: absolute;
+    right: 30%;
+    bottom: 15px;
+    line-height: 1;
+    font-size: 14px;
+    color: #FF6600;
+    padding: 9px 17px;
+    margin: -15px 0 0;
+    border-radius: 16px;
+    font-weight: 600;
+    background: #fff;
+}
+.lists {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 0;
+    /*padding-bottom: 25px!important;*/
+    border-top: 1px solid #dedede;
+}
+.lists li {
+    float: left;
+    width: 49%;
+    box-sizing: border-box;
+}
+.lists li:nth-child(odd){
+    margin-right: 2%;
+}
+.lists li a {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #e6e5e5;
+    background-color: #fff;
+}
+.lists .cover {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 30px;
+}
+.lists .cover img {
+    width: 100%;
+}
+.lists .title {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 13px 10px 0;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    line-height: 20px;
+}
+.lists .title h3 {
+
+    margin-bottom: 6px;
+    font-weight: normal;
+    font-size: inherit;
+    width: 100%;
+    height: 20px;
+    color: #ffc900;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.lists .title span{
+    font-size: 14px;
+}
+.lists .departure-date {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-color: #41c6ad;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 9px 0 10px;
+    border-radius: 24px 0 0 24px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+.lists .info {
+    padding: 22px 10px 13px 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.lists .avatar {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+.lists .avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+.gender {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    vertical-align: -2px;
+}
+.lists .gender {
+    position: absolute;
+    left: 50px;
+    top: 3px;
+}
+.gender.female {
+    background: #fff url(../images/female.png) no-repeat;
+    background-size: 12px;
+}
+.gender.male {
+    background: #fff url(../images/male.png) no-repeat;
+    background-size: 12px;
+}
+.lists .name {
+    position: absolute;
+    top: 3px;
+    left:70px;
+    height: 16px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #696969;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.lists .level {
+    font-size: 12px;
+    color: #fa9f00;
+}
+.lists .location {
+    padding-left: 6px;
+    font-size: 11px;
+    color: #696969;
+}
+.lists .txt {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #a4a4a4;
+    line-height: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+.loading{
+    margin: 8px 0;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fa9f00;
+    border-radius: 8px;
+    border: 1px solid #fa9f00;
+}
+
+/*轮播BBS模块*/
+.bbs {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 9px 10px 60px;
+    height: 40px;
+    background: #fff;
+}
+.bbs .bbs-cover {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 60px;
+    height: 40px;
+    border-right: 1px solid #ddd;
+}
+.bbs .bbs-cover img {
+    display: block;
+    margin: 5px auto;
+    width: 30px;
+    height: 30px;
+}
+.bbs .bbs-cover img {
+    display: block;
+    margin: 5px auto;
+    width: 30px;
+    height: 30px;
+}
+.bbs .bbs-posts {
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+.bbs .bbs-posts li {
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.bbs .bbs-posts a {
+    display: block;
+    color: #666
+}
+
+.bbs .bbs-posts a:after, .bbs .bbs-posts a:before {
+    content: "";
+    display: table
+}
+
+.bbs .bbs-posts a:after {
+    clear: both;
+    overflow: hidden
+}
+
+.bbs .bbs-posts a:visited {
+    color: #666
+}
+
+.bbs .bbs-posts a:hover, .bbs .bbs-posts a:active {
+    color: #666
+}
+
+.bbs .bbs-posts a strong {
+    color: #000
+}
+.bbs .bbs-posts .posts-avatar {
+    float: left;
+    margin: 7px 10px 7px 15px;
+    border-radius: 100%;
+    overflow: hidden
+}
+
+.bbs .bbs-posts .posts-avatar img {
+    display: block;
+    width: 26px;
+    height: 26px
+}
+.bbs .bbs-posts .posts-summary {
+    display: flex;
+    margin-left: 15px;
+    height: 40px;
+    align-items: center
+}
+.bbs .bbs-posts .posts-summary p {
+    max-height: 40px;
+    overflow: hidden
+}
+.bbs .bbs-posts .posts-summary strong {
+    margin-right: 7px;
+    font-weight: 700
+}
+
+.bbsTitle {
+    padding: 10px;
+    border-top: solid 1px #e6e8ea;
+    border-bottom: solid 1px #e6e8ea;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.bbsWrap3 {
+    padding: 3px 10px;
+    background: #fff;
+}
+.bbsIMGS {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    zoom: 1;
+}
+.bbsIMGSitem {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+    height: 69px;
+    float: left;
+    border-bottom: #EEEFF1 solid 1px;
+    color: #494949;
+    overflow: hidden;
+    line-height: 18px;
+    font-size: 14px;
+}
+.bbsIMGSitem:nth-child(odd) {
+    border-right: #EEEFF1 solid 1px;
+    padding: 8px 0;
+}
+.bbsIMGSitem:nth-child(even) {
+    padding: 8px 0px 8px 10px;
+}
+.bbsIMGSitem img {
+    margin-right: 10px;
+    width: 53px;
+    max-width: 100%;
+    height: 53px;
+    vertical-align: middle;
+    float: left;
+}
+.bbsIMGSitem em {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    overflow: hidden;
+}

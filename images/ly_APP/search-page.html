@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="">
+    <title>脉脉游-首页-新一代的约伴旅游平台</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/zepto.js"></script>
+    <style>
+        .search-box{
+            min-width: 320px;
+            max-width: 640px;
+            width: 100%;
+            margin: 0 auto;
+            background: #fff;
+            height: 100%;
+            min-height: 500px;
+            top: 0;
+            left: 50%;
+            transform:translateX(-50%);
+            -webkit-transform:translateX(-50%);
+            position: absolute;
+            z-index: 29;
+        }
+        .search-box .search-inner {
+            padding: 6px 8px;
+        }
+        .search-box .cancelsearch {
+            position: absolute;
+            right: 8px;
+            top: 6px;
+            width: 40px;
+            height: 1.8rem;
+            line-height: 1.8rem;
+            text-align: center;
+            font-size: 16px;
+            color: #f39c11;
+        }
+        .search-box form {
+            margin-right: 40px;
+            background: #ececec url(images/search_on_icon.png) no-repeat 5px 4px;
+            background-size: 23px;
+            padding-left: 2rem;
+            border-radius: 15px;
+        }
+        .search-box .inp-search {
+            height: 30px;
+            padding: 8px 0;
+            line-height: 14px;
+            font-size: 14px;
+            color: #666;
+            background: 0;
+            position: static;
+            width: 100%;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+        .datalist li{
+            width: 80%;
+            font-size: 14px;
+            margin: 0 40px 0;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid #dedede;
+        }
+        .tips {
+            background-color: #fff;
+            width: 100%;
+            border-bottom: 1px solid #F5F5F5;
+        }
+
+        .tips li {
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            margin: 5px 0;
+            padding: 5px 0;
+        }
+
+        .tips:first-child li:first-child {
+            color: #FD7822;
+
+        }
+
+        .tips li:not(:last-child) {
+            border-right: 1px solid #F5F5F5;
+        }
+    </style>
+<body>
+<div id="container">
+    <section class="search-box" id="top_searchbox">
+        <div class="search-inner">
+            <a role="button" tabindex="1" class="cancelsearch">取消</a>
+            <form id="frm_query" action="">
+                <input class="inp-search" type="search" name="q" id="top_searchinput" autofocus="autofocus" autocomplete="off" placeholder="搜索目的地/攻略/游记/问答">
+            </form>
+        </div>
+        <div id="search_suggest">
+            <ul class="datalist" id="datalist">
+                <li>代收款耐热投票人</li>
+                <li>代收款耐热投票人</li>
+                <li>代收款耐热投票人</li>
+                <li>代收款耐热投票人</li>
+                <li>代收款耐热投票人</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="tips">
+                <li>[热门搜索]</li>
+                <li>日本</li>
+                <li>马尔代夫</li>
+
+            </ul>
+            <ul class="tips">
+                <li>法国</li>
+                <li>三亚</li>
+                <li>韩国</li>
+            </ul>
+            <ul class="tips">
+                <li>九寨沟</li>
+                <li>欧洲</li>
+                <li>邮轮</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+<script type="javascript" src="js/searchAjax.js"></script>
+</body>
+</html>

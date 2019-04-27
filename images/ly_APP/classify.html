@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+    	<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content=" ">
+    	<meta name="keywords" content="">
+    	<title>脉脉游-首页-新一代的约伴旅游平台</title>
+		
+		<link rel="stylesheet" href="css/base.css">
+
+		<script src="js/zepto.js"></script>
+
+    </head>
+    <body>
+	<div id="container">
+		<header class="nav">
+			<a class="goBack"></a>
+			<a href="search-page.html" class="goSearch"></a>
+			<h2 href="#" class='navTitle'>分类查看</h2>
+			<div class="mess_num">
+				<a href="index.html" class="back_home"></a>
+				<a class="info"><em>3</em></a>
+			</div>
+		</header>
+	</div>
+	<footer>
+		<a class="foot" href="index.html">
+			<span></span>
+			<p>首页</p>
+		</a>
+		<a class="foot" href="community.html">
+			<span></span>
+			<p>社区</p>
+		</a>
+		<a class="foot" href="destination.html">
+			<span></span>
+			<p>目的地</p>
+		</a>
+		<a class="foot" href="stategy.html">
+			<span></span>
+			<p>攻略</p>
+		</a>
+		<a class="foot" href="home.html">
+			<span></span>
+			<p>我的</p>
+		</a>
+	</footer>
+
+	<script>
+		$(function () {
+
+
+
+            var footbg=function(){
+                var num=0
+                $(".foot span").each(function() {
+                    $(this).parent().attr('index',num);
+                    num++
+                    $(this).css({
+                        "background": "url(images/footer_bg"+num+".png) no-repeat center center",
+                        "background-size": "24px auto",
+                    });
+                });
+            }
+            footbg();
+            $(".foot").on("click",function() {
+                footbg();
+                var index=parseInt($(this).index()+1);
+                $(this).find('span').css({
+                    "background": "url(images/footer_bg"+index+"_act.png) no-repeat center center",
+                    "background-size": "24px auto",
+                });
+                $(this).addClass('act').siblings().removeClass('act');
+            });
+            // setTimeout(function () {
+            //     $(".foot").first().click();
+            // },20);
+        })
+	</script>
+	</body>
+</html>

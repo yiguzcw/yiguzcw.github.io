@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+    	<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content=" ">
+    	<meta name="keywords" content="">
+    	<title>欢迎注册脉脉游-</title>
+		
+		<link rel="stylesheet" href="css/base.css">
+    	<link rel="stylesheet" href="css/register.css">
+    	<script src="js/zepto.js"></script>
+    </head>
+    <body>
+    	<div id="container">
+    		<header class="nav">
+				<a class="goBack"></a>
+        		<h2 href="#" class='navTitle'>脉脉游欢迎您</h2>
+    		</header>
+    		<div class="title clearFix">
+    			<h3 class="active">登录账户</h3>
+    			<h3>手机快速注册</h3>
+    		</div>
+			<section id="phone-login">
+				<form action="#" id="login_form" autocomplete="off" method="post">
+					<div id="detail_display"></div>
+				<!-- 手机登录开始 -->
+					<div class="login-item">
+						<div class="inputs">
+							<label for="phone">用户名：</label>
+							<input type="phone" class="form-control" id="loginum" name="loginum" placeholder="请输入手机号或用户名" minlength="6"/>
+						</div>
+						<div id="loginPhone_tip" class="tip"></div>
+					</div>
+					<div class="login-item">
+						<div class="inputs ">
+							<label for="password">密 码：</label>
+							<input type="password" class="form-control" name="passpord" id="password1" maxlength="16"/>
+						</div>
+						<div id="loginPass_tip" class="tip"></div>
+					</div>
+					<div class="login-btn">
+						<button id="login" >登录</button>
+					</div>
+				</form>
+				<div class='text-center'>
+					还没有账号吗？
+					<a href="javascript:void(0)">点击注册</a>
+				</div>
+			</section>
+			<section id="phone-register"  style="display: none">
+    			<form action="#" id="register_form" autocomplete="off" method="post">
+        			<!-- 手机注册开始 -->
+            		<div class="register-item">
+                		<div class="inputs ">
+                    		<label for="phone">手机号：</label>
+                    		<input type="phone" class="form-control" id="phone" name="phone" placeholder="请输入手机号码" maxlength="11" minlength="11"/>
+                		</div>
+						<div id="phone_tip" class="tip"></div>
+            		</div>
+            		<div class="register-item ">
+                		<div class="inputs verifycode-inputs">
+                    		<label for="phone_vcode">验证码：</label>
+                    		<input type="text" name="phone_vcode" class="form-control" id="phone_vcode" placeholder="请输验证码" maxlength="6" minlength="6">
+							<span id="time_show" style="display:none;position:absolute;right:10px;"><i class="time" id="seconds_show">60</i>秒后重新获取</span>
+							<span id="getcode"><a  href="javascript:void(0);" class="getcode">点击获取验证码</a></span>
+						</div>
+						<div id="vcode_tip" class="tip"></div>
+            		</div>
+            		<!-- 用户名 -->
+            		<div class="register-item">
+                		<div class="inputs ">
+                    		<label for="username">用户名：</label>
+                    		<input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名"/>
+                		</div>
+						<div id="username_tip" class="tip"></div>
+            		</div>
+			
+            		<div class="register-item ">
+                		<div class="inputs ">
+                    		<label for="password">密 码：</label>
+                    		<input type="password" class="form-control" name="passpord" id="password" placeholder="请输入密码" minlength="6" maxlength="20"/>
+                		</div>
+                		<div id="password_tip" class="tip"></div>
+            		</div>
+			
+					<div class="register-item ">
+                		<div class="inputs ">
+                    		<label for="repassword" class="repassword">再次输入密码：</label>
+                    		<input type="password" class="form-control" name="repassword" id="repassword" placeholder="重复输入刚才的密码"/>
+                		</div>
+						<div id="repassword_tip" class="tip"></div>
+            		</div>
+
+        		<!-- 注册按键 -->
+        		<div class="register-btn">
+					<button type="submit" id="register" >注 册</button>
+        		</div>
+			</form>
+        		<div class='text-center'>
+            		已经注册过，
+            		<a href="javascript:void(0)">直接登录</a>
+        		</div>
+		</section>
+		</div>
+
+		<script type="text/javascript" src="js/register.js"></script>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="">
+    <title>我的脉脉游</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/zepto.js"></script>
+</head>
+<body>
+    <div id="container">
+    <header class="nav">
+        <a class="goBack"></a>
+        <h2 href="#" class='navTitle'>我的脉脉</h2>
+        <div class="mess_num">
+            <a class="cart"><em>10</em></a>
+            <a class="info"><em>3</em></a>
+        </div>
+    </header>
+    <section class="userinfo" id="userInfo">
+        <div class="login_home">
+            <a  class="login_img" href="regist.html" >
+                <span id="btn">点击登录</span>
+            </a>
+            <span class="usename">小脉</span>
+        </div>
+        <div class="social clearFix">
+            <div class="attend">
+                <em>0</em>
+                <p>关注</p>
+            </div>
+            <div class="fans">
+                <em>0</em>
+                <p>粉丝</p>
+            </div>
+            <div class="liked">
+                <em>0</em>
+                <p>点赞</p>
+            </div>
+        </div>
+        <div class="equity">
+            <div class="prefer fl">
+                <a>礼品卡</a>
+                <a>推广红包</a>
+                <a>金币</a>
+            </div>
+            <div class="sign fr">
+                <a href="####">每日签到</a>
+            </div>
+        </div>
+    </section>
+    <section class="mc-menu clearFix">
+        <ul>
+            <li>
+                <a id="orderHref" href="#">
+                    <i></i>
+                    <p class="m-title">我的订单</p>
+                </a>
+            </li>
+            <li>
+                <a id="bookingHref" href="#">
+                    <i></i>
+                    <p class="m-title">我的预约</p>
+                </a>
+            </li>
+            <li>
+                <a id="couponHref" href="#">
+                    <i></i>
+                    <p class="m-title">优惠劵</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">我的游记</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">我的收藏</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">我的问答</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">想去目的地</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">我的足迹</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">常用信息</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">意见反馈</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">帮助中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <p class="m-title">联系客服</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <div class="col-2">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="intro">
+                        <h3>1元玩景点</h3>
+                        <p>PLUS会员</p>
+                    </div>
+                    <img src="images/home_discount1.png">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="intro">
+                        <h3>出境特卖</h3>
+                        <p style="color:#ff7e60;border-color: #ff7e60">每日上新</p>
+                    </div>
+                    <img src="images/home_discount2.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="advantage-module">
+        <ul>
+            <li class="price-justice">
+                <i></i>
+                <p>价格公正</p>
+                <span>价格公开透明，请安心购买</span>
+            </li>
+            <li class="rich-product">
+                <i></i>
+                <p>产品丰富</p>
+                <span>出行产品，全品类覆盖，一站式服务</span>
+            </li>
+            <li class="good-quality">
+                <i></i>
+                <p>品质保证</p>
+                <span><em>精挑</em>细选，产品优选，放心出行</span>
+            </li>
+            <li class="goood-advisor">
+                <i></i>
+                <p>专业顾问</p>
+                <span>24小时专业客服，一对一服务</span>
+            </li>
+        </ul>
+    </div>
+</div>
+    <script>
+        window.onload=function(){
+            $(".goBack").click(function () {
+                window.history.go(-1);
+            });
+            var index=0
+            console.log($(".mc-menu ul li a i"));
+            $(".mc-menu ul li  a i").each(function () {
+                index++
+                console.log(index);
+                $(this).css({
+                    "background":"url(images/home_meun_bg"+index+".png) no-repeat center",
+                    "-webkit-background-size": "40px auto",
+                    "background-size": "40px auto",
+                })
+            })
+        }
+    </script>
+</body>
+</html>

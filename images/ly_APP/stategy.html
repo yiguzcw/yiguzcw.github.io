@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+    	<meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content=" ">
+    	<meta name="keywords" content="">
+    	<title>脉脉游-首页-新一代的约伴旅游平台</title>
+		
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/stategy.css">
+
+		<script src="js/zepto.js"></script>
+
+    </head>
+    <body>
+	<div id="container">
+		<header class="nav">
+			<a class="goBack"></a>
+			<a href="search-page.html" class="goSearch"></a>
+			<h2 href="#" class='navTitle'>有攻略游天下</h2>
+			<div class="mess_num">
+				<a href="index.html" class="back_home"></a>
+				<a class="info"><em>3</em></a>
+			</div>
+		</header>
+		<section class="searchbox" id="searchForm">
+			<form class="frm_query">
+				<label class="label"><i></i>搜索目的地</label>
+			</form>
+		</section>
+		<section class="search-box search-box-on" id="top_searchbox">
+			<div class="search-inner">
+				<a role="button" class="cancelsearch" id="cancel">取消</a>
+				<form action="">
+					<input class="inp-search" name="q" id="top_searchinput" autocomplete="off" placeholder="搜索目的地">
+				</form>
+			</div>
+			<div id="topsearch_suggest"></div>
+			<ul id="topsearch_history" class="sug-box">
+
+			</ul>
+		</section>
+		<section class="focus">
+			<img src="images/banner_bg4.jpg" width="100%">
+			<a href="detail.html">
+				<div class="title">
+					<p class="t1">海上度假新模式，解密情侣在邮轮上的浓情好时光！</p>
+				</div>
+			</a>
+		</section>
+		<section class="block">
+			<a class="item-hd" href="search-result.html">
+				<h2>当季推荐</h2>
+				<p class="dec">每月最适合前往的目的地推荐</p>
+			</a>
+			<div class="scopebar">
+				<div class="scrollview">
+					<div class="conbox" id="month">
+						<a href="javascript:void(0);">1月</a>
+						<a href="javascript:void(0);">2月</a>
+						<a href="javascript:void(0);">3月</a>
+						<a href="javascript:void(0);">4月</a>
+						<a href="javascript:void(0);">5月</a>
+						<a href="javascript:void(0);" class="cur">6月</a>
+						<a href="javascript:void(0);">7月</a>
+						<a href="javascript:void(0);">8月</a>
+						<a href="javascript:void(0);">9月</a>
+						<a href="javascript:void(0);">10月</a>
+						<a href="javascript:void(0);">11月</a>
+						<a href="javascript:void(0);">12月</a>
+					</div>
+				</div>
+			</div>
+			<ul id="strate">
+				<li class="tab-con" data-tabname="1月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg1.jpeg">
+							<div class="title">香港</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg2.jpeg">
+							<div class="title">清迈</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg3.jpeg">
+							<div class="title">广州</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg4.jpeg">
+							<div class="title">新加坡</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg5.jpeg">
+							<div class="title">哈尔滨</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth1_bg6.jpeg">
+							<div class="title">越南</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="2月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg1.png">
+							<div class="title">普吉岛</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg2.jpeg">
+							<div class="title">三亚</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg3.jpeg">
+							<div class="title">南京</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg4.jpeg">
+							<div class="title">昆明</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg5.jpeg">
+							<div class="title">芽庄</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth2_bg6.jpeg">
+							<div class="title">新西兰</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="3月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg1.jpeg">
+							<div class="title">日本</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg2.jpeg">
+							<div class="title">西安</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg3.jpeg">
+							<div class="title">重庆</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg4.jpeg">
+							<div class="title">大阪</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg5.jpeg">
+							<div class="title">杭州</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth3_bg6.jpeg">
+							<div class="title">台北</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="4月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg1.jpeg">
+							<div class="title">云南</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg2.jpeg">
+							<div class="title">曼谷</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg3.png">
+							<div class="title">大理</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg4.jpeg">
+							<div class="title">东京</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg5.jpeg">
+							<div class="title">澳门</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth4_bg6.png">
+							<div class="title">新疆</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="5月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg1.jpeg">
+							<div class="title">厦门</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg2.jpeg">
+							<div class="title">美国</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg3.jpeg">
+							<div class="title">青岛</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg4.png">
+							<div class="title">张家界</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg5.png">
+							<div class="title">拉萨</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth5_bg6.png">
+							<div class="title">九寨沟</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="6月">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg1.jpeg">
+							<div class="title">台湾</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg2.jpeg">
+							<div class="title">青海</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg3.png">
+							<div class="title">吉隆坡</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg4.jpeg">
+							<div class="title">北海道</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg5.jpeg">
+							<div class="title">青海湖</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth6_bg6.jpeg">
+							<div class="title">泸沽湖</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="7月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg1.png">
+							<div class="title">西藏</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg2.jpeg">
+							<div class="title">内蒙古</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg3.jpeg">
+							<div class="title">意大利</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg4.jpeg">
+							<div class="title">亚庇</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg5.jpeg">
+							<div class="title">凤凰古镇</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth7_bg6.jpeg">
+							<div class="title">英国</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="8月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg1.jpeg">
+							<div class="title">黄山</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg2.jpeg">
+							<div class="title">斯里兰卡</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg3.jpeg">
+							<div class="title">呼伦贝尔</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg4.jpeg">
+							<div class="title">俄罗斯</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg5.jpeg">
+							<div class="title">敦煌</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth8_bg6.png">
+							<div class="title">峨眉山</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="9月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg1.jpeg">
+							<div class="title">上海</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg2.jpeg">
+							<div class="title">桂林</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg3.png">
+							<div class="title">长沙</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg4.jpeg">
+							<div class="title">土耳其</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg5.jpeg">
+							<div class="title">阳朔</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth9_bg6.jpeg">
+							<div class="title">西塘</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="10月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg1.jpeg">
+							<div class="title">澳大利亚</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg2.jpeg">
+							<div class="title">珠海</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg3.jpeg">
+							<div class="title">香格里拉</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg4.png">
+							<div class="title">垦丁</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg5.jpeg">
+							<div class="title">西班牙</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth10_bg6.jpeg">
+							<div class="title">稻城</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="11月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg1.jpeg">
+							<div class="title">北京</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg2.jpeg">
+							<div class="title">柬埔寨</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg3.jpeg">
+							<div class="title">甲米</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg4.png">
+							<div class="title">乌镇</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg5.jpeg">
+							<div class="title">涠洲岛</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth11_bg6.png">
+							<div class="title">济南</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+				<li class="tab-con" data-tabname="12月" style="display:none;">
+					<div class="item-list clearFix">
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg1.jpeg">
+							<div class="title">深圳</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg2.jpeg">
+							<div class="title">菲律宾</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg3.jpeg">
+							<div class="title">苏梅岛</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg4.jpeg">
+							<div class="title">迪拜</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg5.jpeg">
+							<div class="title">毛里求斯</div>
+						</a>
+						<a href="search-result.html">
+							<img src="images/stategy_mouth12_bg6.jpeg">
+							<div class="title">雪乡</div>
+						</a>
+					</div>
+					<div class="showmore">
+						<a href="search-result.html">更多目的地</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<h3 class="bbsTitle h2">畅游亚洲</h3>
+		<div class="bbsWrap3">
+		<div class="bbsIMGS">
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a1.jpg">
+				<em>环游亚洲</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a2.jpg">
+				<em>日本</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a3.jpg">
+				<em>韩国/朝鲜</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a4.jpg">
+				<em>台湾</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a5.jpg">
+				<em>香港/澳门</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a6.jpg">
+				<em>泰国</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a7.jpg">
+				<em>马来西亚/文莱</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a8.jpg">
+				<em>新加坡</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a9.jpg">
+				<em>菲律宾</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a10.jpg">
+				<em>柬埔寨</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-1.jpg">
+				<em>越南</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-2.jpg">
+				<em>老挝</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-3.jpg">
+				<em>缅甸</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-4.jpg">
+				<em>尼泊尔</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-5.jpg">
+				<em>不丹</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-6.jpg">
+				<em>印度尼西亚/东帝汶</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-7.jpg">
+				<em>马尔代夫</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-8.jpg">
+				<em>斯里兰卡</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a1.jpg">
+				<em>印度/孟加拉</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a2.jpg">
+				<em>伊朗</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a3.jpg">
+				<em>巴基斯坦/阿富汗</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a4.jpg">
+				<em>阿联酋/卡塔尔</em>
+			</a>
+			<a class="bbsIMGSitem" href="//m.qyer.com/bbs/forum-170-1.html">
+				<img src="images/a5.jpg">
+				<em>以色列</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a6.jpg">
+				<em>西亚其他国家</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a7.jpg">
+				<em>中亚各国</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a8.jpg">
+				<em>蒙古</em>
+			</a>
+			<a class="bbsIMGSitem border-none" href="search-result.html">
+				<img src="images/a9.jpg">
+				<em>中国内地</em>
+			</a>
+		</div>
+	</div>
+		<h3 class="bbsTitle h2">畅游欧美</h3>
+		<div class="bbsWrap3">
+		<div class="bbsIMGS">
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a1.jpg">
+				<em>美国</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a2.jpg">
+				<em>加拿大</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a3.jpg">
+				<em>中美</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a4.jpg">
+				<em>南美/南极</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a5.jpg">
+				<em>环游欧洲</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a6.jpg">
+				<em>法国/摩纳哥</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a7.jpg">
+				<em>德国</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a8.jpg">
+				<em>瑞士/列支敦士登</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a9.jpg">
+				<em>奥地利</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a10.jpg">
+				<em>捷克/斯洛伐克/匈牙利</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-1.jpg">
+				<em>西班牙/葡萄牙/安道尔</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-2.jpg">
+				<em>希腊/塞浦路斯</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-3.jpg">
+				<em>意大利/梵蒂冈/圣马力诺/马耳他</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-4.jpg">
+				<em>英国/爱尔兰</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-5.jpg">
+				<em>荷兰/比利时/卢森堡</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-6.jpg">
+				<em>波兰/立陶宛/拉脱维亚/爱沙尼亚</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-7.jpg">
+				<em>挪威/瑞典/芬兰/丹麦/冰岛</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/tour-8.jpg">
+				<em>俄罗斯/乌克兰/白俄罗斯</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a1.jpg">
+				<em>外高加索三国</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a2.jpg">
+				<em>土耳其</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a3.jpg">
+				<em>东南欧地区</em>
+			</a>
+			<a class="bbsIMGSitem" href="search-result.html">
+				<img src="images/a4.jpg">
+				<em>欧洲交通</em>
+			</a>
+		</div>
+	</div>
+
+	</div>
+	<footer>
+		<a class="foot" href="index.html">
+			<span></span>
+			<p>首页</p>
+		</a>
+		<a class="foot" href="community.html">
+			<span></span>
+			<p>社区</p>
+		</a>
+		<a class="foot" href="destination.html">
+			<span></span>
+			<p>目的地</p>
+		</a>
+		<a class="foot act" href="####">
+			<span></span>
+			<p>攻略</p>
+		</a>
+		<a class="foot" href="home.html">
+			<span></span>
+			<p>我的</p>
+		</a>
+	</footer>
+	<script>
+        $(function () {
+            $(".goBack").on("click",function () {
+                window.history.go(-1);
+            });
+            $("#searchForm").on("click",function () {
+				$("#top_searchbox").show();
+            });
+			$("#cancel").on("click",function () {
+                $("#top_searchbox").hide();
+            });
+			$("#month a").on("click",function () {
+				$(this).addClass("cur").siblings().removeClass("cur");
+				$(this).index();
+				console.log($(this).index());
+				$("#strate .tab-con").eq($(this).index()).show().siblings().hide();
+            });
+
+            var width=window.screen.width/2 ;
+            var left=$("#month .cur").offset().left;
+            function activeMouth() {
+
+                var box=$("#month .cur").offset().width/2;
+                console.log(left);
+                if (left>width){
+                    $("#month").css("marginLeft",-(left-width+box)+"px");
+                }else{
+                    $("#month").css("marginLeft",-left+"px");
+                }
+            }
+            activeMouth();
+            var footbg=function(){
+                var num=0
+                $(".foot span").each(function() {
+                    $(this).parent().attr('index',num);
+                    num++
+                    $(this).css({
+                        "background": "url(images/footer_bg"+num+".png) no-repeat center center",
+                        "background-size": "24px auto",
+                    });
+                });
+            }
+            footbg();
+            $(".foot").on("click",function() {
+                footbg();
+                var index=parseInt($(this).index()+1);
+                $(this).find('span').css({
+                    "background": "url(images/footer_bg"+index+"_act.png) no-repeat center center",
+                    "background-size": "24px auto",
+                });
+                $(this).addClass('act').siblings().removeClass('act');
+            });
+            setTimeout(function () {
+                $(".foot").eq(3).click();
+            },20);
+        })
+	</script>
+	</body>
+</html>

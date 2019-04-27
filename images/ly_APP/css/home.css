@@ -1,0 +1,295 @@
+.userinfo {
+    height: 200px;
+    overflow: hidden;
+    background: url("../images/login_home.jpg") no-repeat center center;
+    background-size: auto 200px;
+}
+.userinfo .login_home{
+    width: 90px;
+    height: 90px;
+    margin: 15px auto 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #6C6C6C;
+    overflow: hidden;
+    position: relative;
+}
+.userinfo .login_img span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60,60,60,.8);
+    color: #ffc900;
+}
+.userinfo .login_home a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 90px;
+    text-align: center;
+    background: url("../images/portrait.jpg");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+}
+.userinfo .login_home .usename{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    color: #d9d9d9;
+}
+.userinfo .social{
+    width: 150px;
+    margin: 15px auto 0;
+}
+.userinfo .social div{
+    padding:0 10px;
+    float: left;
+    text-align: center;
+}
+.userinfo .social div.fans{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.userinfo .social div p{
+    color: #ffc900;
+}
+.userinfo .equity{
+    margin-top: 10px;
+}
+.userinfo .equity .prefer{
+    padding-left: 10px;
+}
+.userinfo .equity .prefer a{
+    padding: 0 5px;
+    border-bottom: 1px solid #ffc900;
+}
+.userinfo .equity .sign {
+    margin-right: 15px;
+    width: 68px;
+    height: 26px;
+    background-color: #ffc900;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 8px;
+}
+.mc-menu{
+    margin-top: 15px;
+    background-color: #fff;
+}
+.mc-menu ul li{
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #C9C9C9;
+}
+.mc-menu ul li:nth-child(3n+2){
+    border-left: 1px solid #C9C9C9;
+    border-right: 1px solid #C9C9C9;
+}
+.mc-menu ul li a{
+    display: inline-block;
+    margin-top: 5px;
+}
+.mc-menu ul li a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+
+
+.breadcrumb {
+    background-color: #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #c7c7c7
+}
+
+.breadcrumb header > a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5em;
+    height: 100%;
+    background: transparent url(http://res.vmall.com/nwap/20150605/images/echannelWap/icon/icon11_1.png) scroll no-repeat 50% 50%;
+    background-size: .9em 1.6em
+}
+
+.breadcrumb header em {
+    display: block;
+    width: 100%;
+    height: 3.53em;
+    line-height: 3.53em;
+    vertical-align: middle;
+    font-size: 1.4em;
+    color: #333;
+    text-align: center;
+    font-family: roboto, \65B9\6B63\5170\4EAD\51C6\9ED1_GBK
+}
+.shortcut {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: .5em;
+    padding-right: .5em
+}
+
+.shortcut li {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top
+}
+
+.shortcut .icon-home, .shortcut .icon-shoppingCart, .shortcut .icon-personal, .shortcut .icon-search {
+    position: relative;
+    padding: 1.9em;
+    background-size: 3em 3em;
+    background-position: 50% 50%
+}
+
+.shortcut .icon-shoppingCart span {
+    position: absolute;
+    display: block;
+    top: .4em;
+    right: 0;
+    background: url(http://res.vmall.com/nwap/20150605/images/echannelWap/icon/member2.png) no-repeat;
+    background-size: 100% 100%;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    font-size: .9em
+}
+
+.shortcut .icon-text {
+    display: block;
+    height: 3.7em;
+    width: 3.7em
+}
+
+.shortcut .icon-text span {
+    line-height: 2.67;
+    text-align: center;
+    font-size: 1.4em;
+    color: #28c0c6;
+    font-family: roboto, \65B9\6B63\5170\4EAD\51C6\9ED1_GBK
+}
+.col-2{
+    background-color: #fff;
+    margin-top: 5px;
+}
+.col-2 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+}
+.col-2 ul li {
+    width: 100%;
+    height: 6.5rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    display: block;
+}
+.col-2 ul li a {
+    height: 6rem;
+    padding: 0.8rem .6rem;
+    display: block;
+    border-left: 1px solid #e4e4e4;
+    position: relative;
+}
+.col-2 ul li:first-child a {
+    border-left: none;
+}
+.col-2 ul li a>img {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    right: .7rem;
+    top: 1.2rem;
+}
+.col-2 ul li:first-child a>img{
+    top: 1.1rem;
+    right: .4rem;
+}
+.col-2 .intro h3 {
+    font-weight: normal;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    margin-top: .7rem;
+}
+.col-2 .intro p {
+    color: #ebb73f;
+    height: 1.2rem;
+    font-size: .7rem;
+    line-height: 1.2rem;
+    border-width: 2px;
+    border-color: #ebb73f;
+    border-style: solid;
+    padding: 0 .5rem;
+    display: inline-block;
+    border-radius: .9rem;
+    margin-top: .38rem;
+}
+
+
+.advantage-module {
+    margin-top: .85rem;
+    background: #fff;
+}
+.advantage-module ul {
+    padding: 2rem 0 2rem 2.5rem;
+}
+.advantage-module ul li {
+    color: #9f8a70;
+    position: relative;
+    padding-left: 4.2rem;
+    margin-top: 2.35rem;
+}
+.advantage-module ul li:first-child {
+    margin-top: 0;
+}
+.advantage-module ul li i{
+    background: url(../images/home_server_bg.png) no-repeat center center;
+    background-size: auto 50px
+}
+.advantage-module ul li i {
+    width: 2.8rem;
+    height:  2.8rem;
+    position: absolute;
+    top: .10667rem;
+    left: 0;
+}
+.advantage-module ul li.price-justice i {
+    background-position: -6px 0px;
+}
+.advantage-module ul li.rich-product i {
+    background-position: -55px 0px;
+}
+.advantage-module ul li.good-quality i {
+    background-position: -104px 0px;
+}
+.advantage-module ul li.goood-advisor i {
+    background-position: -154px 0px;
+}
+.advantage-module ul li p {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+.advantage-module ul li span {
+    font-size: .85rem;
+}

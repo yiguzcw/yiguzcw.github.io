@@ -1,0 +1,300 @@
+.tab-area {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border: solid 1px #dcdcdc;
+    border-top: 0;
+    z-index: 10;
+}
+.tab-area ul li {
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+    margin-left: 7.8125%;
+    width: 23.4375%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.tab-area ul .active {
+    color: #2ebd59;
+}
+.tab-area ul .active:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #2ebd59;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.volume {
+    margin-top: 40px;
+    border-bottom: 1px solid #bebebe;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.volume ul{
+    display: flex;
+
+}
+
+.volume li {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.volume li a {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.volume li:not(:last-child) {
+    border-right: 1px solid #bebebe;
+}
+
+.volume li a span{
+    margin-left: 5px;
+    display: inline-block;
+    background-image: url("../images/xiasanjiao.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 20px;
+    width: 12px;
+    height: 12px;
+}
+#plist{
+    display: flex;
+    flex-direction: column;
+}
+
+.auction{
+    padding: 5px 5px 10px 100px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 100px;
+    overflow: hidden;
+    min-height: 115px;
+    background: #fff;
+    position: relative;
+}
+.main-pic {
+    position: relative;
+    font-size: 0;
+}
+.auction .main-pic .img-area{
+    width: 150px;
+    height: 150px;
+    margin-right: 8px;
+    margin-left: -95px;
+    float: left;
+    border-radius: 3px;
+    margin-top: 5px;
+    position: relative;
+}
+.auction .main-pic .img-area img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main-pic a span{
+    color: #fff;
+    left: 0;
+    display: inline-block;
+}
+.auction .main-pic a .time{
+    font-size: 14px;
+    position: absolute;
+    bottom: -2px!important;
+    top: initial;
+    background: #596d85;
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.main-pic a .icon_gentuan,.main-pic a .icon_free{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    color: #fff;
+    height: 20px;
+    text-align: center;
+    padding-left: 8px;
+    display: inline-block;
+}
+.main-pic a .icon_gentuan:after,.main-pic a .icon_free:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 18px solid transparent;
+}
+.main-pic a .icon_gentuan{
+    background: #c59c53;
+}
+.main-pic a .icon_gentuan:after{
+    border-top: 20px solid #c59c53;
+}
+.main-pic a .icon_free{
+    background: #449e66;
+}
+
+.main-pic a .icon_free:after{
+    border-top: 1.25rem solid #449e66;
+}
+
+.main-pic .describe .title{
+    position: static;
+    background: 0 0;
+    bottom: 0;
+    color: #333;
+    text-indent: 0;
+    line-height: 16px;
+    height: 80px;
+    overflow: hidden;
+    padding: 9px 20px 0 0;
+}
+.main-pic .describe .title b{
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    display: -webkit-box;
+    height: 45px;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.main-pic .describe .title .infos{
+    overflow: hidden;
+    /*max-height: 17px;*/
+    margin-top: 10px;
+}
+.describe .label {
+    display: inline-block;
+    min-width: 45px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 11px;
+    vertical-align: 1px;
+    float: left;
+    border: 1px solid #fff;
+    margin-right: 5px;
+    padding: 0 3px;
+}
+.describe .label--green {
+    color: #50b400;
+    border-color: #50b400;
+    padding: 0 3px;
+}
+.describe .remark{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 8px;
+}
+.describe .remark .remark-label{
+    color: #999;
+    font-size: 12px;
+}
+.describe .remark em{
+    color: #efefef;
+}
+.auction .new-price{
+    width: 100%;
+    margin-top: 12px;
+}
+.auction .new-price .new-tcPrice{
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+    position: relative;
+}
+.auction .new-price .new-tcPrice em{
+    color: #f63;
+    font-size: 14px;
+    font-weight: 400;
+}
+.auction .new-price .new-tcPrice b{
+    color: #f63;
+    font-size: 24px;
+    font-weight: 700;
+}
+.auction .new-price .allTravel{
+    margin-top: 8px;
+    font-size: 12px;
+    float: right;
+}
+.auction .new-price .allTravel .allTravel-name{
+    color: #ff5603;
+    font-weight: 700;
+}
+.auction .new-price .allTravel .allTravel-price {
+    color: #ff6013;
+}
+.auction .retui{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.83333333rem;
+    height: 2.83333333rem;
+    background: url(../images/retui_biaotou.png) no-repeat;
+    background-size: cover;
+}
+@media (max-width: 400px) {
+    .auction .main-pic .img-area {
+        width: 100px;
+        height: 100px;
+    }
+    .main-pic .describe .title {
+         height: 60px;
+        padding-top: 5px;
+    }
+    .main-pic .describe .title b {
+        font-size: 14px;
+        height: 36px;
+        line-height: 18px;
+    }
+    .main-pic .describe .title .infos {
+        margin-top: 5px;
+    }
+    .describe .remark {
+        top: 0;
+    }
+    .auction .new-price {
+         margin-top: 0;
+    }
+    }
