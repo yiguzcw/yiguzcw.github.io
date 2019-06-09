@@ -515,7 +515,7 @@ input, textarea, button {
     background-image: url(../my_skill_bg.jpg);
 }
 .skill-wepr {
-    margin-top: 135px;
+    margin-top: 100px;
     position: relative;
 }
 .skill-wepr h2{
@@ -549,8 +549,10 @@ input, textarea, button {
     color: #fff;
 }
 .skill-wepr .skills li p{
+    margin-top: -10px;
     text-align: left;
     color: #fff;
+    text-shadow:1px 3px 1px #000;
 }
 .skill-wepr .skills .progress{
     margin-left: 15px;
@@ -606,7 +608,7 @@ input, textarea, button {
 }
 .work-exp .container{
     position: relative;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .work-exp h3.title{
     width: 86px;
@@ -616,7 +618,7 @@ input, textarea, button {
     color: #6bc30d;
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 20px;
     border-radius: 50%;
     border: 5px solid #d7d8d8;
     cursor: pointer;
