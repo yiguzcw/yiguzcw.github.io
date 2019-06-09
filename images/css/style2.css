@@ -597,6 +597,9 @@ input, textarea, button {
         font-size: 16px;
         overflow: hidden;
     }
+    .skill-wepr .skills li p{
+        margin-top: 0;
+    }
 }
 @media (max-width:767px){
     .skill-wepr {
